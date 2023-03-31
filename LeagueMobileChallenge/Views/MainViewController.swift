@@ -18,7 +18,8 @@ class MainViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Posts"
+        
         tableView.register(UINib(nibName: "PostTableCell", bundle: nil), forCellReuseIdentifier: "PostTableCell")
         tableView.dataSource = dataSource
         
