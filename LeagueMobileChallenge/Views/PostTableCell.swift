@@ -16,6 +16,14 @@ class PostTableCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        let path = UIBezierPath(ovalIn: avatarImageView.bounds).cgPath
+        let layer = CAShapeLayer()
+        layer.path = path
+        avatarImageView.layer.mask = layer
+    }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         
@@ -25,7 +33,7 @@ class PostTableCell: UITableViewCell {
     }
     
     func decorate(with postItem: PostItem) {
-        avatarImageView.sd_setImage(with: postItem.avatar, placeholderImage: UIImage(systemName: "pencil.circle"))
+        avatarImageView.sd_setImage(with: postItem.avatar, placeholderImage: UIImage(systemName: "person.circle"))
         usernameLabel.text = postItem.userName
         titleLabel.text = postItem.title
         descLabel.text = postItem.body
