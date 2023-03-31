@@ -11,16 +11,15 @@ import UIKit
 
 class MainViewController: UITableViewController {
     override func viewDidLoad() {
-        APIController.shared.fetchUserToken { token, error in
-            print("XXX token: \(String(describing: token))")
-        }
-        
-        APIController.shared.fetchUsers { users, error in
-            print("XXX users: \(String(describing: users))")
-        }
-        
-        APIController.shared.fetchPosts { posts, error in
-            print("XXX users: \(String(describing: posts))")
+        Task.detached {
+            let token = await GetUserTokenFromNetwork().get()
+            print("XXXX token: \(token)")
+            
+            let users = await GetUsersFromNetwork().get()
+            print("XXXX users: \(users)")
+            
+            let posts = await GetPostsFromNetwork().get()
+            print("XXXX posts: \(posts)")
         }
     }
 }
