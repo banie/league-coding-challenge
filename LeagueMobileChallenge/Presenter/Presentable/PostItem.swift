@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PostItem: Identifiable {
+struct PostItem: Identifiable, Hashable {
     let id: Int
     let userName: String
     let avatar: URL

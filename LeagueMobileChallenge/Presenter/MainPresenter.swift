@@ -7,11 +7,18 @@
 //
 
 import Foundation
+import Combine
+import UIKit
 
 class MainPresenter {
     weak var delegate: MainPresenterDelegate?
     
-    var items: [PostItem]
+    private let listChangedSubject = PassthroughSubject<NSDiffableDataSourceSnapshot<Int, PostItem>, Never>()
+    var listChanged: AnyPublisher<NSDiffableDataSourceSnapshot<Int, PostItem>, Never> {
+        listChangedSubject.eraseToAnyPublisher()
+    }
+    
+    private var items: [PostItem]
     
     init() {
         items = []
@@ -55,7 +62,11 @@ class MainPresenter {
             }
         }
         
-        print("XXXX items: \(items)")
+        var snapshot = NSDiffableDataSourceSnapshot<Int, PostItem>()
+        snapshot.appendSections([0])
+        snapshot.appendItems(items)
+        
+        listChangedSubject.send(snapshot)
     }
 }
 
