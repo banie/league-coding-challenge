@@ -9,17 +9,17 @@
 import Foundation
 
 class GetUsersFromNetwork: GetUsers {
-    private let apiController: APIController
+    private let networkApi: NetworkApi
     private let decoder: JSONDecoder
     
-    init(apiController: APIController = APIController.shared) {
-        self.apiController = apiController
+    init(networkApi: NetworkApi = APIController.shared) {
+        self.networkApi = networkApi
         decoder = JSONDecoder()
     }
     
     func get() async -> Result<[User], Error> {
         await withCheckedContinuation { continuation in
-            apiController.fetchUsers(completion: { data, error in
+            networkApi.fetchUsers(completion: { data, error in
                 guard let data = data as? Data else {
                     return continuation.resume(returning: .failure(NSError()))
                 }

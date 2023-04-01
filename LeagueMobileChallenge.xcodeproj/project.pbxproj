@@ -22,6 +22,9 @@
 		71A7625E29D72C1600767F90 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7625D29D72C1600767F90 /* MainPresenter.swift */; };
 		71A7626229D765DE00767F90 /* PostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7626129D765DE00767F90 /* PostTableCell.swift */; };
 		71A7626629D7662B00767F90 /* PostTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A7626529D7662B00767F90 /* PostTableCell.xib */; };
+		71A7626829D7DC9B00767F90 /* NetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7626729D7DC9B00767F90 /* NetworkApi.swift */; };
+		71A7626A29D7DD3300767F90 /* APIController+NetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7626929D7DD3300767F90 /* APIController+NetworkApi.swift */; };
+		71A7626D29D7E02800767F90 /* NetworkApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7626C29D7E02800767F90 /* NetworkApiMock.swift */; };
 		B6AC694F21E6578D0094A9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC694E21E6578D0094A9B1 /* AppDelegate.swift */; };
 		B6AC695421E6578D0094A9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695221E6578D0094A9B1 /* Main.storyboard */; };
 		B6AC695921E6578F0094A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695821E6578F0094A9B1 /* Assets.xcassets */; };
@@ -67,6 +70,9 @@
 		71A7625D29D72C1600767F90 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		71A7626129D765DE00767F90 /* PostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableCell.swift; sourceTree = "<group>"; };
 		71A7626529D7662B00767F90 /* PostTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableCell.xib; sourceTree = "<group>"; };
+		71A7626729D7DC9B00767F90 /* NetworkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApi.swift; sourceTree = "<group>"; };
+		71A7626929D7DD3300767F90 /* APIController+NetworkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIController+NetworkApi.swift"; sourceTree = "<group>"; };
+		71A7626C29D7E02800767F90 /* NetworkApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiMock.swift; sourceTree = "<group>"; };
 		71E420C2560A70D44F192FFD /* Pods-LeagueMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		9E973EA07DC680BB29B1002A /* Pods_LeagueMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE17B652112E8ACDBCA2682C /* Pods-LeagueMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 				71A7625629D6A3E200767F90 /* GetUserToken.swift */,
 				71A7624E29D69D3600767F90 /* GetPosts.swift */,
 				71A7625029D69D4900767F90 /* GetUsers.swift */,
+				71A7626729D7DC9B00767F90 /* NetworkApi.swift */,
 				71A7625A29D6A85A00767F90 /* Network */,
 			);
 			path = Interactors;
@@ -176,6 +183,7 @@
 				71A7625829D6A5F000767F90 /* GetUsersFromNetwork.swift */,
 				71A7625229D69D9400767F90 /* GetPostsFromNetwork.swift */,
 				B6AC69A121ECEC740094A9B1 /* APIController.swift */,
+				71A7626929D7DD3300767F90 /* APIController+NetworkApi.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -195,6 +203,14 @@
 				71A7625B29D7216A00767F90 /* PostItem.swift */,
 			);
 			path = Presentable;
+			sourceTree = "<group>";
+		};
+		71A7626B29D7E00C00767F90 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				71A7626C29D7E02800767F90 /* NetworkApiMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		B6AC694221E6578D0094A9B1 = {
@@ -237,6 +253,7 @@
 		B6AC696521E6578F0094A9B1 /* LeagueMobileChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				71A7626B29D7E00C00767F90 /* Mocks */,
 				B6AC696621E6578F0094A9B1 /* LeagueMobileChallengeTests.swift */,
 				B6AC696821E6578F0094A9B1 /* Info.plist */,
 			);
@@ -481,11 +498,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A7626829D7DC9B00767F90 /* NetworkApi.swift in Sources */,
 				71A7624F29D69D3600767F90 /* GetPosts.swift in Sources */,
 				B6AC69A221ECEC740094A9B1 /* APIController.swift in Sources */,
 				71A7625529D6A3AD00767F90 /* GetAccessTokenFromNetwork.swift in Sources */,
 				B6AC694F21E6578D0094A9B1 /* AppDelegate.swift in Sources */,
 				71A7625729D6A3E200767F90 /* GetUserToken.swift in Sources */,
+				71A7626A29D7DD3300767F90 /* APIController+NetworkApi.swift in Sources */,
 				71A7625329D69D9400767F90 /* GetPostsFromNetwork.swift in Sources */,
 				71A7625E29D72C1600767F90 /* MainPresenter.swift in Sources */,
 				71A7625C29D7216A00767F90 /* PostItem.swift in Sources */,
@@ -503,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6AC696721E6578F0094A9B1 /* LeagueMobileChallengeTests.swift in Sources */,
+				71A7626D29D7E02800767F90 /* NetworkApiMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RHN4E42P4E;
+				DEVELOPMENT_TEAM = DB36J6R4D5;
 				INFOPLIST_FILE = LeagueMobileChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
