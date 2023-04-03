@@ -23,6 +23,7 @@ class MainViewController: UITableViewController {
         tableView.register(UINib(nibName: "PostTableCell", bundle: nil), forCellReuseIdentifier: "PostTableCell")
         tableView.dataSource = dataSource
         
+        presenter.delegate = self
         presenter.listChanged.sink { [weak self] snapshot in
             self?.dataSource.apply(snapshot)
         }.store(in: &subscribers)
@@ -38,5 +39,21 @@ class MainViewController: UITableViewController {
             cell?.decorate(with: postItem)
             return cell
         }
+    }
+}
+
+extension MainViewController: MainPresenterDelegate {
+    func tokenFetchDidFail(with error: Error) {
+        let alert = UIAlertController(title: "Getting user token failed", message: "Please try again later", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        
+        present(alert, animated: true)
+    }
+    
+    func loadDidFail(with error: Error) {
+        let alert = UIAlertController(title: "Failed in fetching for posts", message: "Please try again later", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        
+        present(alert, animated: true)
     }
 }

@@ -34,7 +34,9 @@ class MainPresenter {
         case .success(let token):
             print("XXXX token: \(token)")
         case .failure(let error):
-            delegate?.tokenFetchDidFail(with: error)
+            await MainActor.run {
+                delegate?.tokenFetchDidFail(with: error)
+            }
             return
         }
         
@@ -43,8 +45,8 @@ class MainPresenter {
         switch usersResult {
         case .success(let userList):
             users = userList
-        case .failure(let error):
-            delegate?.loadDidFail(with: error)
+        case .failure(_):
+            break
         }
         
         var posts: [Post] = []
@@ -53,7 +55,9 @@ class MainPresenter {
         case .success(let postList):
             posts = postList
         case .failure(let error):
-            delegate?.loadDidFail(with: error)
+            await MainActor.run {
+                delegate?.loadDidFail(with: error)
+            }
         }
         
         items = posts.map { post in
@@ -75,6 +79,9 @@ class MainPresenter {
 }
 
 protocol MainPresenterDelegate: AnyObject {
+    @MainActor
     func tokenFetchDidFail(with error: Error)
+    
+    @MainActor
     func loadDidFail(with error: Error)
 }
