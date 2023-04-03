@@ -28,6 +28,9 @@
 		71A7627129D87BBC00767F90 /* GetUsersFromNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7627029D87BBC00767F90 /* GetUsersFromNetworkTests.swift */; };
 		71C335A929DA2BD500F2AF1D /* GetPostsFromNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335A829DA2BD500F2AF1D /* GetPostsFromNetworkTests.swift */; };
 		71C335AB29DA464200F2AF1D /* PostTableCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335AA29DA464200F2AF1D /* PostTableCellTests.swift */; };
+		71C335AD29DA84AD00F2AF1D /* GetUsersMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335AC29DA84AD00F2AF1D /* GetUsersMock.swift */; };
+		71C335AF29DA84BF00F2AF1D /* GetPostsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335AE29DA84BF00F2AF1D /* GetPostsMock.swift */; };
+		71C335B329DA870400F2AF1D /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335B229DA870400F2AF1D /* MainPresenterTests.swift */; };
 		B6AC694F21E6578D0094A9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC694E21E6578D0094A9B1 /* AppDelegate.swift */; };
 		B6AC695421E6578D0094A9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695221E6578D0094A9B1 /* Main.storyboard */; };
 		B6AC695921E6578F0094A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695821E6578F0094A9B1 /* Assets.xcassets */; };
@@ -79,6 +82,9 @@
 		71A7627029D87BBC00767F90 /* GetUsersFromNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersFromNetworkTests.swift; sourceTree = "<group>"; };
 		71C335A829DA2BD500F2AF1D /* GetPostsFromNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsFromNetworkTests.swift; sourceTree = "<group>"; };
 		71C335AA29DA464200F2AF1D /* PostTableCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableCellTests.swift; sourceTree = "<group>"; };
+		71C335AC29DA84AD00F2AF1D /* GetUsersMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersMock.swift; sourceTree = "<group>"; };
+		71C335AE29DA84BF00F2AF1D /* GetPostsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsMock.swift; sourceTree = "<group>"; };
+		71C335B229DA870400F2AF1D /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
 		71E420C2560A70D44F192FFD /* Pods-LeagueMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		9E973EA07DC680BB29B1002A /* Pods_LeagueMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE17B652112E8ACDBCA2682C /* Pods-LeagueMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				71A7626C29D7E02800767F90 /* NetworkApiMock.swift */,
+				71C335AC29DA84AD00F2AF1D /* GetUsersMock.swift */,
+				71C335AE29DA84BF00F2AF1D /* GetPostsMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -262,6 +270,7 @@
 				71A7626B29D7E00C00767F90 /* Mocks */,
 				71A7627029D87BBC00767F90 /* GetUsersFromNetworkTests.swift */,
 				71C335A829DA2BD500F2AF1D /* GetPostsFromNetworkTests.swift */,
+				71C335B229DA870400F2AF1D /* MainPresenterTests.swift */,
 				71C335AA29DA464200F2AF1D /* PostTableCellTests.swift */,
 				B6AC696621E6578F0094A9B1 /* LeagueMobileChallengeTests.swift */,
 				B6AC696821E6578F0094A9B1 /* Info.plist */,
@@ -526,6 +535,9 @@
 				B6AC696721E6578F0094A9B1 /* LeagueMobileChallengeTests.swift in Sources */,
 				71C335AB29DA464200F2AF1D /* PostTableCellTests.swift in Sources */,
 				71A7626D29D7E02800767F90 /* NetworkApiMock.swift in Sources */,
+				71C335B329DA870400F2AF1D /* MainPresenterTests.swift in Sources */,
+				71C335AD29DA84AD00F2AF1D /* GetUsersMock.swift in Sources */,
+				71C335AF29DA84BF00F2AF1D /* GetPostsMock.swift in Sources */,
 				71A7627129D87BBC00767F90 /* GetUsersFromNetworkTests.swift in Sources */,
 				71C335A929DA2BD500F2AF1D /* GetPostsFromNetworkTests.swift in Sources */,
 			);

@@ -18,9 +18,13 @@ class MainPresenter {
         listChangedSubject.eraseToAnyPublisher()
     }
     
+    private let getUsersInteractor: GetUsers
+    private let getPostsInteractor: GetPosts
     private var items: [PostItem]
     
-    init() {
+    init(getUsersInteractor: GetUsers = GetUsersFromNetwork(), getPostsInteractor: GetPosts = GetPostsFromNetwork()) {
+        self.getUsersInteractor = getUsersInteractor
+        self.getPostsInteractor = getPostsInteractor
         items = []
     }
     
@@ -35,7 +39,7 @@ class MainPresenter {
         }
         
         var users: [User] = []
-        let usersResult = await GetUsersFromNetwork().get()
+        let usersResult = await getUsersInteractor.get()
         switch usersResult {
         case .success(let userList):
             users = userList
@@ -44,7 +48,7 @@ class MainPresenter {
         }
         
         var posts: [Post] = []
-        let postsResult = await GetPostsFromNetwork().get()
+        let postsResult = await getPostsInteractor.get()
         switch postsResult {
         case .success(let postList):
             posts = postList
