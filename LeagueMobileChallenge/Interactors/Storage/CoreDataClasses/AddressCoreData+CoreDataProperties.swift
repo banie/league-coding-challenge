@@ -22,6 +22,5 @@ extension AddressCoreData {
     @NSManaged public var userId: Int64
     @NSManaged public var zipcode: String?
     @NSManaged public var geo: GeoCoreData?
-    @NSManaged public var user: UserCoreData?
 
 }

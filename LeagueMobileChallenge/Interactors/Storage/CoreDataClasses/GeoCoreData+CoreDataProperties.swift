@@ -18,6 +18,5 @@ extension GeoCoreData {
 
     @NSManaged public var lat: String
     @NSManaged public var lng: String
-    @NSManaged public var address: AddressCoreData?
 
 }

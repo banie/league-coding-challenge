@@ -45,6 +45,10 @@
 		71C335F829DB4BFD00F2AF1D /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335F729DB4BFD00F2AF1D /* PersistenceController.swift */; };
 		71C335FC29DB4C8900F2AF1D /* GetUsersFromCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335FB29DB4C8900F2AF1D /* GetUsersFromCoreData.swift */; };
 		71C335FE29DB735900F2AF1D /* GetPostsFromCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335FD29DB735900F2AF1D /* GetPostsFromCoreData.swift */; };
+		71C3360029DB789000F2AF1D /* SavePostsToCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335FF29DB789000F2AF1D /* SavePostsToCoreData.swift */; };
+		71C3360229DB7D9F00F2AF1D /* SaveUsersToCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360129DB7D9F00F2AF1D /* SaveUsersToCoreData.swift */; };
+		71C3360429DB814B00F2AF1D /* SaveUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360329DB814B00F2AF1D /* SaveUsers.swift */; };
+		71C3360629DB819E00F2AF1D /* SavePosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360529DB819E00F2AF1D /* SavePosts.swift */; };
 		B6AC694F21E6578D0094A9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC694E21E6578D0094A9B1 /* AppDelegate.swift */; };
 		B6AC695421E6578D0094A9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695221E6578D0094A9B1 /* Main.storyboard */; };
 		B6AC695921E6578F0094A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695821E6578F0094A9B1 /* Assets.xcassets */; };
@@ -113,6 +117,10 @@
 		71C335F729DB4BFD00F2AF1D /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		71C335FB29DB4C8900F2AF1D /* GetUsersFromCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersFromCoreData.swift; sourceTree = "<group>"; };
 		71C335FD29DB735900F2AF1D /* GetPostsFromCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsFromCoreData.swift; sourceTree = "<group>"; };
+		71C335FF29DB789000F2AF1D /* SavePostsToCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePostsToCoreData.swift; sourceTree = "<group>"; };
+		71C3360129DB7D9F00F2AF1D /* SaveUsersToCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUsersToCoreData.swift; sourceTree = "<group>"; };
+		71C3360329DB814B00F2AF1D /* SaveUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUsers.swift; sourceTree = "<group>"; };
+		71C3360529DB819E00F2AF1D /* SavePosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePosts.swift; sourceTree = "<group>"; };
 		71E420C2560A70D44F192FFD /* Pods-LeagueMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		9E973EA07DC680BB29B1002A /* Pods_LeagueMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE17B652112E8ACDBCA2682C /* Pods-LeagueMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,8 +216,10 @@
 			isa = PBXGroup;
 			children = (
 				71A7625629D6A3E200767F90 /* GetUserToken.swift */,
-				71A7624E29D69D3600767F90 /* GetPosts.swift */,
 				71A7625029D69D4900767F90 /* GetUsers.swift */,
+				71C3360329DB814B00F2AF1D /* SaveUsers.swift */,
+				71A7624E29D69D3600767F90 /* GetPosts.swift */,
+				71C3360529DB819E00F2AF1D /* SavePosts.swift */,
 				71A7626729D7DC9B00767F90 /* NetworkApi.swift */,
 				71A7625A29D6A85A00767F90 /* Network */,
 				71C335B429DA9AC900F2AF1D /* Storage */,
@@ -263,6 +273,8 @@
 				71C335B529DA9DD000F2AF1D /* League.xcdatamodeld */,
 				71C335FB29DB4C8900F2AF1D /* GetUsersFromCoreData.swift */,
 				71C335FD29DB735900F2AF1D /* GetPostsFromCoreData.swift */,
+				71C3360129DB7D9F00F2AF1D /* SaveUsersToCoreData.swift */,
+				71C335FF29DB789000F2AF1D /* SavePostsToCoreData.swift */,
 				71C335F729DB4BFD00F2AF1D /* PersistenceController.swift */,
 			);
 			path = Storage;
@@ -585,6 +597,7 @@
 				71A7626229D765DE00767F90 /* PostTableCell.swift in Sources */,
 				71C335F829DB4BFD00F2AF1D /* PersistenceController.swift in Sources */,
 				71A7623F29D68AC800767F90 /* User.swift in Sources */,
+				71C3360029DB789000F2AF1D /* SavePostsToCoreData.swift in Sources */,
 				71C335EF29DB47CC00F2AF1D /* CompanyCoreData+CoreDataClass.swift in Sources */,
 				71C335EC29DB47CC00F2AF1D /* PostCoreData+CoreDataClass.swift in Sources */,
 				71C335EA29DB47CC00F2AF1D /* CompanyCoreData+CoreDataProperties.swift in Sources */,
@@ -593,9 +606,12 @@
 				71C335ED29DB47CC00F2AF1D /* PostCoreData+CoreDataProperties.swift in Sources */,
 				71A7624129D68BE400767F90 /* Post.swift in Sources */,
 				71A7624A29D6979500767F90 /* MainViewController.swift in Sources */,
+				71C3360229DB7D9F00F2AF1D /* SaveUsersToCoreData.swift in Sources */,
+				71C3360629DB819E00F2AF1D /* SavePosts.swift in Sources */,
 				71A7625929D6A5F000767F90 /* GetUsersFromNetwork.swift in Sources */,
 				71A7625129D69D4900767F90 /* GetUsers.swift in Sources */,
 				71C335B729DA9DD000F2AF1D /* League.xcdatamodeld in Sources */,
+				71C3360429DB814B00F2AF1D /* SaveUsers.swift in Sources */,
 				71C335FE29DB735900F2AF1D /* GetPostsFromCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
