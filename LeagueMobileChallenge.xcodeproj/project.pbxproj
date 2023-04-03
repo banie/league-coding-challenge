@@ -31,6 +31,17 @@
 		71C335AD29DA84AD00F2AF1D /* GetUsersMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335AC29DA84AD00F2AF1D /* GetUsersMock.swift */; };
 		71C335AF29DA84BF00F2AF1D /* GetPostsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335AE29DA84BF00F2AF1D /* GetPostsMock.swift */; };
 		71C335B329DA870400F2AF1D /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335B229DA870400F2AF1D /* MainPresenterTests.swift */; };
+		71C335B729DA9DD000F2AF1D /* League.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71C335B529DA9DD000F2AF1D /* League.xcdatamodeld */; };
+		71C335EA29DB47CC00F2AF1D /* CompanyCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E029DB47CB00F2AF1D /* CompanyCoreData+CoreDataProperties.swift */; };
+		71C335EB29DB47CC00F2AF1D /* GeoCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E129DB47CB00F2AF1D /* GeoCoreData+CoreDataClass.swift */; };
+		71C335EC29DB47CC00F2AF1D /* PostCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E229DB47CB00F2AF1D /* PostCoreData+CoreDataClass.swift */; };
+		71C335ED29DB47CC00F2AF1D /* PostCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E329DB47CC00F2AF1D /* PostCoreData+CoreDataProperties.swift */; };
+		71C335EE29DB47CC00F2AF1D /* GeoCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E429DB47CC00F2AF1D /* GeoCoreData+CoreDataProperties.swift */; };
+		71C335EF29DB47CC00F2AF1D /* CompanyCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E529DB47CC00F2AF1D /* CompanyCoreData+CoreDataClass.swift */; };
+		71C335F029DB47CC00F2AF1D /* UserCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E629DB47CC00F2AF1D /* UserCoreData+CoreDataProperties.swift */; };
+		71C335F129DB47CC00F2AF1D /* AddressCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E729DB47CC00F2AF1D /* AddressCoreData+CoreDataClass.swift */; };
+		71C335F229DB47CC00F2AF1D /* UserCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E829DB47CC00F2AF1D /* UserCoreData+CoreDataClass.swift */; };
+		71C335F329DB47CC00F2AF1D /* AddressCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C335E929DB47CC00F2AF1D /* AddressCoreData+CoreDataProperties.swift */; };
 		B6AC694F21E6578D0094A9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC694E21E6578D0094A9B1 /* AppDelegate.swift */; };
 		B6AC695421E6578D0094A9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695221E6578D0094A9B1 /* Main.storyboard */; };
 		B6AC695921E6578F0094A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695821E6578F0094A9B1 /* Assets.xcassets */; };
@@ -85,6 +96,17 @@
 		71C335AC29DA84AD00F2AF1D /* GetUsersMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersMock.swift; sourceTree = "<group>"; };
 		71C335AE29DA84BF00F2AF1D /* GetPostsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsMock.swift; sourceTree = "<group>"; };
 		71C335B229DA870400F2AF1D /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
+		71C335B629DA9DD000F2AF1D /* League.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = League.xcdatamodel; sourceTree = "<group>"; };
+		71C335E029DB47CB00F2AF1D /* CompanyCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompanyCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71C335E129DB47CB00F2AF1D /* GeoCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71C335E229DB47CB00F2AF1D /* PostCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71C335E329DB47CC00F2AF1D /* PostCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71C335E429DB47CC00F2AF1D /* GeoCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeoCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71C335E529DB47CC00F2AF1D /* CompanyCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompanyCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71C335E629DB47CC00F2AF1D /* UserCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71C335E729DB47CC00F2AF1D /* AddressCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddressCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71C335E829DB47CC00F2AF1D /* UserCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71C335E929DB47CC00F2AF1D /* AddressCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddressCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		71E420C2560A70D44F192FFD /* Pods-LeagueMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		9E973EA07DC680BB29B1002A /* Pods_LeagueMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE17B652112E8ACDBCA2682C /* Pods-LeagueMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +206,7 @@
 				71A7625029D69D4900767F90 /* GetUsers.swift */,
 				71A7626729D7DC9B00767F90 /* NetworkApi.swift */,
 				71A7625A29D6A85A00767F90 /* Network */,
+				71C335B429DA9AC900F2AF1D /* Storage */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -225,6 +248,32 @@
 				71C335AE29DA84BF00F2AF1D /* GetPostsMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		71C335B429DA9AC900F2AF1D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				71C335F629DB4B8D00F2AF1D /* CoreDataClasses */,
+				71C335B529DA9DD000F2AF1D /* League.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		71C335F629DB4B8D00F2AF1D /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				71C335E529DB47CC00F2AF1D /* CompanyCoreData+CoreDataClass.swift */,
+				71C335E029DB47CB00F2AF1D /* CompanyCoreData+CoreDataProperties.swift */,
+				71C335E229DB47CB00F2AF1D /* PostCoreData+CoreDataClass.swift */,
+				71C335E329DB47CC00F2AF1D /* PostCoreData+CoreDataProperties.swift */,
+				71C335E129DB47CB00F2AF1D /* GeoCoreData+CoreDataClass.swift */,
+				71C335E429DB47CC00F2AF1D /* GeoCoreData+CoreDataProperties.swift */,
+				71C335E829DB47CC00F2AF1D /* UserCoreData+CoreDataClass.swift */,
+				71C335E629DB47CC00F2AF1D /* UserCoreData+CoreDataProperties.swift */,
+				71C335E729DB47CC00F2AF1D /* AddressCoreData+CoreDataClass.swift */,
+				71C335E929DB47CC00F2AF1D /* AddressCoreData+CoreDataProperties.swift */,
+			);
+			path = CoreDataClasses;
 			sourceTree = "<group>";
 		};
 		B6AC694221E6578D0094A9B1 = {
@@ -509,10 +558,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C335EE29DB47CC00F2AF1D /* GeoCoreData+CoreDataProperties.swift in Sources */,
 				71A7626829D7DC9B00767F90 /* NetworkApi.swift in Sources */,
 				71A7624F29D69D3600767F90 /* GetPosts.swift in Sources */,
 				B6AC69A221ECEC740094A9B1 /* APIController.swift in Sources */,
 				71A7625529D6A3AD00767F90 /* GetAccessTokenFromNetwork.swift in Sources */,
+				71C335F129DB47CC00F2AF1D /* AddressCoreData+CoreDataClass.swift in Sources */,
+				71C335F329DB47CC00F2AF1D /* AddressCoreData+CoreDataProperties.swift in Sources */,
+				71C335F029DB47CC00F2AF1D /* UserCoreData+CoreDataProperties.swift in Sources */,
 				B6AC694F21E6578D0094A9B1 /* AppDelegate.swift in Sources */,
 				71A7625729D6A3E200767F90 /* GetUserToken.swift in Sources */,
 				71A7626A29D7DD3300767F90 /* APIController+NetworkApi.swift in Sources */,
@@ -521,10 +574,17 @@
 				71A7625C29D7216A00767F90 /* PostItem.swift in Sources */,
 				71A7626229D765DE00767F90 /* PostTableCell.swift in Sources */,
 				71A7623F29D68AC800767F90 /* User.swift in Sources */,
+				71C335EF29DB47CC00F2AF1D /* CompanyCoreData+CoreDataClass.swift in Sources */,
+				71C335EC29DB47CC00F2AF1D /* PostCoreData+CoreDataClass.swift in Sources */,
+				71C335EA29DB47CC00F2AF1D /* CompanyCoreData+CoreDataProperties.swift in Sources */,
+				71C335F229DB47CC00F2AF1D /* UserCoreData+CoreDataClass.swift in Sources */,
+				71C335EB29DB47CC00F2AF1D /* GeoCoreData+CoreDataClass.swift in Sources */,
+				71C335ED29DB47CC00F2AF1D /* PostCoreData+CoreDataProperties.swift in Sources */,
 				71A7624129D68BE400767F90 /* Post.swift in Sources */,
 				71A7624A29D6979500767F90 /* MainViewController.swift in Sources */,
 				71A7625929D6A5F000767F90 /* GetUsersFromNetwork.swift in Sources */,
 				71A7625129D69D4900767F90 /* GetUsers.swift in Sources */,
+				71C335B729DA9DD000F2AF1D /* League.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +926,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		71C335B529DA9DD000F2AF1D /* League.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				71C335B629DA9DD000F2AF1D /* League.xcdatamodel */,
+			);
+			currentVersion = 71C335B629DA9DD000F2AF1D /* League.xcdatamodel */;
+			path = League.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B6AC694321E6578D0094A9B1 /* Project object */;
 }
