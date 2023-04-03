@@ -10,14 +10,14 @@ import Foundation
 
 struct User: Codable {
     let id: Int
-    let avatar: URL
+    let avatar: URL?
     let name: String
     let username: String
     let email: String
-    let address: Address
+    let address: Address?
     let phone: String
-    let website: URL
-    let company: Company
+    let website: URL?
+    let company: Company?
 }
 
 struct Address: Codable {
@@ -25,7 +25,7 @@ struct Address: Codable {
     let suite: String
     let city: String
     let zipcode: String
-    let geo: Geo
+    let geo: Geo?
 }
 
 struct Geo: Codable {

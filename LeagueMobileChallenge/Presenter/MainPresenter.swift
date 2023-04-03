@@ -66,7 +66,7 @@ class MainPresenter {
             }) {
                 return PostItem(id: post.id, userName: user.name, avatar: user.avatar, title: post.title, body: post.body)
             } else {
-                return PostItem(id: post.id, userName: "", avatar: URL(fileURLWithPath: ""), title: post.title, body: post.body)
+                return PostItem(id: post.id, userName: "", avatar: nil, title: post.title, body: post.body)
             }
         }
         

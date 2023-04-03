@@ -11,7 +11,7 @@ import Foundation
 struct PostItem: Identifiable, Hashable {
     let id: Int
     let userName: String
-    let avatar: URL
+    let avatar: URL?
     let title: String
     let body: String
 }
