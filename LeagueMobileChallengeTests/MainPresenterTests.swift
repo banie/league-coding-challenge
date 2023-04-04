@@ -14,13 +14,15 @@ final class MainPresenterTests: XCTestCase {
     
     private var getUsersMock: GetUsersMock!
     private var getPostsMock: GetPostsMock!
+    private var interactorFactory: InteractorFactoryMock!
     private var presenter: MainPresenter!
     private var subscribers = [AnyCancellable]()
     
     override func setUpWithError() throws {
         getUsersMock = GetUsersMock()
         getPostsMock = GetPostsMock()
-        presenter = MainPresenter(getUsersInteractor: getUsersMock, getPostsInteractor: getPostsMock)
+        interactorFactory = InteractorFactoryMock(getPostsFromNetworkMock: getPostsMock, getUsersFromNetworkMock: getUsersMock, getPostsFromStorageMock: getPostsMock, getUsersFromStorageMock: getUsersMock, savePostsToStorageMock: SavePostsMock(), saveUsersToStoragekMock: SaveUsersMock())
+        presenter = MainPresenter(interactorFactory: interactorFactory)
     }
 
     override func tearDownWithError() throws {

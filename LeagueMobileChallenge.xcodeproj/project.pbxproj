@@ -50,6 +50,9 @@
 		71C3360429DB814B00F2AF1D /* SaveUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360329DB814B00F2AF1D /* SaveUsers.swift */; };
 		71C3360629DB819E00F2AF1D /* SavePosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360529DB819E00F2AF1D /* SavePosts.swift */; };
 		71C3360829DB8DA200F2AF1D /* InteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360729DB8DA200F2AF1D /* InteractorFactory.swift */; };
+		71C3360A29DBE48400F2AF1D /* InteractorFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360929DBE48400F2AF1D /* InteractorFactoryMock.swift */; };
+		71C3360C29DBE58E00F2AF1D /* SaveUsersMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360B29DBE58E00F2AF1D /* SaveUsersMock.swift */; };
+		71C3360E29DBE59A00F2AF1D /* SavePostsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360D29DBE59A00F2AF1D /* SavePostsMock.swift */; };
 		B6AC694F21E6578D0094A9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC694E21E6578D0094A9B1 /* AppDelegate.swift */; };
 		B6AC695421E6578D0094A9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695221E6578D0094A9B1 /* Main.storyboard */; };
 		B6AC695921E6578F0094A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695821E6578F0094A9B1 /* Assets.xcassets */; };
@@ -123,6 +126,9 @@
 		71C3360329DB814B00F2AF1D /* SaveUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUsers.swift; sourceTree = "<group>"; };
 		71C3360529DB819E00F2AF1D /* SavePosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePosts.swift; sourceTree = "<group>"; };
 		71C3360729DB8DA200F2AF1D /* InteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorFactory.swift; sourceTree = "<group>"; };
+		71C3360929DBE48400F2AF1D /* InteractorFactoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorFactoryMock.swift; sourceTree = "<group>"; };
+		71C3360B29DBE58E00F2AF1D /* SaveUsersMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUsersMock.swift; sourceTree = "<group>"; };
+		71C3360D29DBE59A00F2AF1D /* SavePostsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePostsMock.swift; sourceTree = "<group>"; };
 		71E420C2560A70D44F192FFD /* Pods-LeagueMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		9E973EA07DC680BB29B1002A /* Pods_LeagueMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE17B652112E8ACDBCA2682C /* Pods-LeagueMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -263,8 +269,11 @@
 			isa = PBXGroup;
 			children = (
 				71A7626C29D7E02800767F90 /* NetworkApiMock.swift */,
+				71C3360929DBE48400F2AF1D /* InteractorFactoryMock.swift */,
 				71C335AC29DA84AD00F2AF1D /* GetUsersMock.swift */,
 				71C335AE29DA84BF00F2AF1D /* GetPostsMock.swift */,
+				71C3360B29DBE58E00F2AF1D /* SaveUsersMock.swift */,
+				71C3360D29DBE59A00F2AF1D /* SavePostsMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -624,12 +633,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C3360E29DBE59A00F2AF1D /* SavePostsMock.swift in Sources */,
 				B6AC696721E6578F0094A9B1 /* LeagueMobileChallengeTests.swift in Sources */,
 				71C335AB29DA464200F2AF1D /* PostTableCellTests.swift in Sources */,
 				71A7626D29D7E02800767F90 /* NetworkApiMock.swift in Sources */,
 				71C335B329DA870400F2AF1D /* MainPresenterTests.swift in Sources */,
 				71C335AD29DA84AD00F2AF1D /* GetUsersMock.swift in Sources */,
+				71C3360A29DBE48400F2AF1D /* InteractorFactoryMock.swift in Sources */,
 				71C335AF29DA84BF00F2AF1D /* GetPostsMock.swift in Sources */,
+				71C3360C29DBE58E00F2AF1D /* SaveUsersMock.swift in Sources */,
 				71A7627129D87BBC00767F90 /* GetUsersFromNetworkTests.swift in Sources */,
 				71C335A929DA2BD500F2AF1D /* GetPostsFromNetworkTests.swift in Sources */,
 			);

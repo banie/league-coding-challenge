@@ -89,15 +89,15 @@ final class GetUsersFromNetworkTests: XCTestCase {
             XCTAssertEqual(users.count, 2)
             XCTAssertEqual(users[0].id, 1)
             XCTAssertEqual(users[0].name, "Leanne Graham")
-            XCTAssertEqual(users[0].address.street, "Kulas Light")
-            XCTAssertEqual(users[0].address.zipcode, "92998-3874")
-            XCTAssertEqual(users[0].address.geo.lat, "-37.3159")
-            XCTAssertEqual(users[0].address.geo.lng, "81.1496")
+            XCTAssertEqual(users[0].address?.street, "Kulas Light")
+            XCTAssertEqual(users[0].address?.zipcode, "92998-3874")
+            XCTAssertEqual(users[0].address?.geo?.lat, "-37.3159")
+            XCTAssertEqual(users[0].address?.geo?.lng, "81.1496")
             XCTAssertEqual(users[0].name, "Leanne Graham")
             XCTAssertEqual(users[1].id, 2)
             XCTAssertEqual(users[1].name, "Leanne Graham 2")
-            XCTAssertEqual(users[0].company.name, "Romaguera-Crona")
-            XCTAssertEqual(users[0].company.bs, "harness real-time e-markets")
+            XCTAssertEqual(users[0].company?.name, "Romaguera-Crona")
+            XCTAssertEqual(users[0].company?.bs, "harness real-time e-markets")
         }
     }
 }
