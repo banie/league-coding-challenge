@@ -18,7 +18,25 @@ class SaveUsersToCoreData: SaveUsers {
     
     func save(_ users: [User]) throws {
         for user in users {
-            let userCoreData = UserCoreData(context: objectContext)
+            let fetchRequest: NSFetchRequest<UserCoreData> = UserCoreData.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == %d", user.id)
+
+            // since we don't want to save the same user with the same id, find it first
+            // in the db, if one exist then just update that entity with the newest
+            // properties from the network
+            let userCoreData: UserCoreData
+            do {
+                let results = try objectContext.fetch(fetchRequest)
+                if let firstEntity = results.first {
+                    userCoreData = firstEntity
+                } else {
+                    userCoreData = UserCoreData(context: objectContext)
+                }
+            } catch let error as NSError {
+                print("Fetch error: \(error) description: \(error.userInfo)")
+                userCoreData = UserCoreData(context: objectContext)
+            }
+            
             userCoreData.id = Int64(user.id)
             userCoreData.name = user.name
             userCoreData.username = user.username
