@@ -21,7 +21,7 @@ class PersistenceController {
     }
     
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "LeagueMobileChallenge")
+        container = NSPersistentContainer(name: "League")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

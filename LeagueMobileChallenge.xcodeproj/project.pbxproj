@@ -49,6 +49,7 @@
 		71C3360229DB7D9F00F2AF1D /* SaveUsersToCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360129DB7D9F00F2AF1D /* SaveUsersToCoreData.swift */; };
 		71C3360429DB814B00F2AF1D /* SaveUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360329DB814B00F2AF1D /* SaveUsers.swift */; };
 		71C3360629DB819E00F2AF1D /* SavePosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360529DB819E00F2AF1D /* SavePosts.swift */; };
+		71C3360829DB8DA200F2AF1D /* InteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3360729DB8DA200F2AF1D /* InteractorFactory.swift */; };
 		B6AC694F21E6578D0094A9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC694E21E6578D0094A9B1 /* AppDelegate.swift */; };
 		B6AC695421E6578D0094A9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695221E6578D0094A9B1 /* Main.storyboard */; };
 		B6AC695921E6578F0094A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695821E6578F0094A9B1 /* Assets.xcassets */; };
@@ -121,6 +122,7 @@
 		71C3360129DB7D9F00F2AF1D /* SaveUsersToCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUsersToCoreData.swift; sourceTree = "<group>"; };
 		71C3360329DB814B00F2AF1D /* SaveUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUsers.swift; sourceTree = "<group>"; };
 		71C3360529DB819E00F2AF1D /* SavePosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePosts.swift; sourceTree = "<group>"; };
+		71C3360729DB8DA200F2AF1D /* InteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorFactory.swift; sourceTree = "<group>"; };
 		71E420C2560A70D44F192FFD /* Pods-LeagueMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		9E973EA07DC680BB29B1002A /* Pods_LeagueMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE17B652112E8ACDBCA2682C /* Pods-LeagueMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				71A7625D29D72C1600767F90 /* MainPresenter.swift */,
+				71C3360729DB8DA200F2AF1D /* InteractorFactory.swift */,
 				71A7626029D72C8400767F90 /* Presentable */,
 			);
 			path = Presenter;
@@ -584,6 +587,7 @@
 				71A7626829D7DC9B00767F90 /* NetworkApi.swift in Sources */,
 				71A7624F29D69D3600767F90 /* GetPosts.swift in Sources */,
 				B6AC69A221ECEC740094A9B1 /* APIController.swift in Sources */,
+				71C3360829DB8DA200F2AF1D /* InteractorFactory.swift in Sources */,
 				71A7625529D6A3AD00767F90 /* GetAccessTokenFromNetwork.swift in Sources */,
 				71C335F129DB47CC00F2AF1D /* AddressCoreData+CoreDataClass.swift in Sources */,
 				71C335F329DB47CC00F2AF1D /* AddressCoreData+CoreDataProperties.swift in Sources */,
